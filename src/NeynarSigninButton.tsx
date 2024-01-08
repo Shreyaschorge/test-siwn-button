@@ -5,7 +5,7 @@ interface Props {
   onPress: () => void;
 }
 
-const NeynarSigninButton = ({ onPress }: Props) => {
+export const NeynarSigninButton = ({ onPress }: Props) => {
   return (
     <TouchableOpacity onPress={onPress} style={styles.signInButton}>
       <Image
@@ -33,5 +33,3 @@ const styles = StyleSheet.create({
   logo: { width: 24, height: 24, marginRight: 10 },
   signInText: { fontSize: 16, fontWeight: "300" },
 });
-
-export default NeynarSigninButton;
