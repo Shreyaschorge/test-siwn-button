@@ -1,0 +1,27 @@
+{
+  "name": "test-siwn-button",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "clean": "del-cli ./build/*",
+    "build": "yarn run clean && tsc"
+  },
+  "author": "Neynar",
+  "license": "MIT",
+  "devDependencies": {
+    "del-cli": "^5.1.0",
+    "@types/node": "^20.8.4",
+    "@types/react": "^18.2.47",
+    "@babel/core": "^7.20.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-native": "^0.73.1"
+  }
+}
